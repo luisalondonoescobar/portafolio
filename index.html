@@ -8,106 +8,172 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <a href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Site Header -->
-  <header>
-    <nav aria-label="Primary navigation">
-      <a href="index.html">Luisa</a>
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#featured-work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <nav class="site-nav container" aria-label="Primary navigation">
+      <a class="site-logo" href="index.html">Luisa</a>
+      <div class="site-nav__links">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#featured-work">Work</a></li>
+          <li><a href="#principles">Principles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main id="main-content">
     <!-- Hero Section -->
-    <section id="hero" aria-labelledby="hero-heading" aria-describedby="hero-description">
-      <p>Product Designer</p>
-      <h1 id="hero-heading">I design digital products that people understand and teams can build.</h1>
-      <p id="hero-description">
-        I design scalable digital experiences by combining systems thinking, UX strategy,
-        accessibility and close collaboration with development teams.
-      </p>
-      <a href="#featured-work">View my work</a>
-      <a href="assets/documents/cv.pdf" download>Download Luisa&apos;s CV</a>
+    <section class="hero section" id="hero" aria-labelledby="hero-heading" aria-describedby="hero-description">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <p class="eyebrow">Product Designer</p>
+          <h1 id="hero-heading">I design digital products that people understand and teams can build.</h1>
+          <p id="hero-description">
+            I design scalable digital experiences by combining systems thinking, UX strategy,
+            accessibility and close collaboration with development teams.
+          </p>
+          <div class="hero__actions" aria-label="Primary actions">
+            <a class="btn btn-primary" href="#featured-work">View my work</a>
+            <a class="btn btn-secondary" href="assets/documents/cv.pdf" download>Download Luisa&apos;s CV</a>
+          </div>
+        </div>
+        <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder">
+          <span>Portrait</span>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <p>
-        Luisa is a Product Designer experienced in shaping complex digital platforms with
-        clear structure, accessible interactions, and practical product thinking.
-      </p>
-      <p>
-        Her work connects Design Systems, UX Writing, WordPress, Information Architecture,
-        and technical collaboration to help teams make digital experiences easier to use,
-        maintain, and evolve.
-      </p>
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="section__inner container">
+        <div class="section__header">
+          <p class="eyebrow">About</p>
+          <h2 id="about-heading">Designing with clarity, systems and collaboration.</h2>
+        </div>
+        <div class="section__content text-flow">
+          <p>
+            Luisa is a Product Designer experienced in shaping complex digital platforms with
+            clear structure, accessible interactions, and practical product thinking.
+          </p>
+          <p>
+            Her work connects Design Systems, UX Writing, WordPress, Information Architecture,
+            and technical collaboration to help teams make digital experiences easier to use,
+            maintain, and evolve.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Core Strengths Section -->
-    <section id="strengths" aria-labelledby="strengths-heading">
-      <h2 id="strengths-heading">Core Strengths</h2>
-      <ul>
-        <li>
-          <h3>Systems Thinking</h3>
-          <p>Connecting user needs, product goals, and technical constraints into coherent experiences.</p>
-        </li>
-        <li>
-          <h3>Design Systems</h3>
-          <p>Creating reusable patterns that help products scale with consistency and clarity.</p>
-        </li>
-        <li>
-          <h3>Technical Collaboration</h3>
-          <p>Working closely with development teams to design solutions that can be built well.</p>
-        </li>
-        <li>
-          <h3>Information Architecture</h3>
-          <p>Organizing content and flows so people can find, understand, and complete what matters.</p>
-        </li>
-        <li>
-          <h3>UX Writing</h3>
-          <p>Using clear product language to guide users through complex decisions and tasks.</p>
-        </li>
-        <li>
-          <h3>Problem Solving</h3>
-          <p>Breaking down ambiguity into focused design decisions and practical next steps.</p>
-        </li>
-      </ul>
+    <section class="section" id="strengths" aria-labelledby="strengths-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Core Expertise</p>
+          <h2 id="strengths-heading">Core strengths for complex product work.</h2>
+        </div>
+        <ul class="feature-grid" aria-label="Core expertise">
+          <li class="feature-item">
+            <h3>Systems Thinking</h3>
+            <p>Connecting user needs, product goals, and technical constraints into coherent experiences.</p>
+          </li>
+          <li class="feature-item">
+            <h3>Design Systems</h3>
+            <p>Creating reusable patterns that help products scale with consistency and clarity.</p>
+          </li>
+          <li class="feature-item">
+            <h3>Technical Collaboration</h3>
+            <p>Working closely with development teams to design solutions that can be built well.</p>
+          </li>
+          <li class="feature-item">
+            <h3>Information Architecture</h3>
+            <p>Organizing content and flows so people can find, understand, and complete what matters.</p>
+          </li>
+          <li class="feature-item">
+            <h3>UX Writing</h3>
+            <p>Using clear product language to guide users through complex decisions and tasks.</p>
+          </li>
+          <li class="feature-item">
+            <h3>Problem Solving</h3>
+            <p>Breaking down ambiguity into focused design decisions and practical next steps.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Featured Work Section -->
-    <section id="featured-work" aria-labelledby="featured-work-heading">
-      <h2 id="featured-work-heading">Featured Work</h2>
-      <article>
-        <h3>Design System</h3>
-        <p>Placeholder summary for a scalable design system project, including patterns, documentation, and product alignment.</p>
-        <a href="work.html">Read more about the Design System</a>
-      </article>
-      <article>
-        <h3>Digital Platform</h3>
-        <p>Placeholder summary for a complex digital platform project focused on structure, usability, and product workflows.</p>
-        <a href="work.html">Read more about the Digital Platform</a>
-      </article>
-      <article>
-        <h3>WordPress Experience</h3>
-        <p>Placeholder summary for a WordPress experience involving content architecture, editorial needs, and maintainable design.</p>
-        <a href="work.html">Read more about the WordPress Experience</a>
-      </article>
+    <section class="section" id="featured-work" aria-labelledby="featured-work-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Featured Projects</p>
+          <h2 id="featured-work-heading">Selected work placeholders.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__image" role="img" aria-label="Design System project image placeholder"></div>
+            <div class="project-card__body">
+              <p class="project-card__category">Design System</p>
+              <h3>Design System</h3>
+              <p>Placeholder summary for a scalable design system project, including patterns, documentation, and product alignment.</p>
+              <a href="work.html">Read more about the Design System</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image" role="img" aria-label="Digital Platform project image placeholder"></div>
+            <div class="project-card__body">
+              <p class="project-card__category">Digital Platform</p>
+              <h3>Digital Platform</h3>
+              <p>Placeholder summary for a complex digital platform project focused on structure, usability, and product workflows.</p>
+              <a href="work.html">Read more about the Digital Platform</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image" role="img" aria-label="WordPress Experience project image placeholder"></div>
+            <div class="project-card__body">
+              <p class="project-card__category">WordPress</p>
+              <h3>WordPress Experience</h3>
+              <p>Placeholder summary for a WordPress experience involving content architecture, editorial needs, and maintainable design.</p>
+              <a href="work.html">Read more about the WordPress Experience</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Principles Section -->
+    <section class="section" id="principles" aria-labelledby="principles-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Design Principles</p>
+          <h2 id="principles-heading">Principles that guide the work.</h2>
+        </div>
+        <ul class="principles-list">
+          <li>Every design decision should solve a problem.</li>
+          <li>Clarity is more valuable than decoration.</li>
+          <li>Design systems create consistency and scalability.</li>
+          <li>Documentation is part of the design process.</li>
+          <li>Accessibility should be considered from the beginning.</li>
+          <li>Good collaboration produces better products.</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Contact CTA Section -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Let&apos;s Work Together</h2>
-      <p>
-        Have a project, collaboration, or opportunity in mind? Reach out to start a conversation.
-      </p>
-      <a href="contact.html">Contact me</a>
+    <section class="section contact-cta" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-cta__inner container">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-heading">Let&apos;s Work Together</h2>
+          <p>
+            Have a project, collaboration, or opportunity in mind? Reach out to start a conversation.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Contact me</a>
+      </div>
     </section>
   </main>
 
@@ -115,7 +181,5 @@
   <footer>
     <p>&copy; 2026 Luisa. All rights reserved.</p>
   </footer>
-
-  <script src="assets/js/script.js" defer></script>
 </body>
 </html>

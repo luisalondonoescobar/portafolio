@@ -1,0 +1,139 @@
+:root {
+  /* ==========================================================================
+     Colors
+     ========================================================================== */
+
+  --color-white: #ffffff;
+  --color-transparent: transparent;
+  --color-ink-strong: #18181b;
+  --color-ink: #27272a;
+  --color-ink-muted: #52525b;
+  --color-ink-soft: #71717a;
+  --color-surface: #fafafa;
+  --color-surface-raised: #ffffff;
+  --color-surface-muted: #f4f4f5;
+  --color-border: #e4e4e7;
+  --color-border-strong: #d4d4d8;
+  --color-accent: #315EFB;
+  --color-accent-strong: #274ED4;
+  --color-accent-soft: #E8F0FF;
+  --color-focus: #2563eb;
+  --color-shadow: 24 24 27;
+
+  /* ==========================================================================
+     Typography
+     ========================================================================== */
+
+  --font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-heading: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3.25rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.15;
+  --line-height-snug: 1.35;
+  --line-height-base: 1.6;
+  --line-height-loose: 1.75;
+
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.04em;
+  --text-decoration-thickness: 0.0625rem;
+
+  /* ==========================================================================
+     Spacing
+     ========================================================================== */
+
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ==========================================================================
+     Border Radius
+     ========================================================================== */
+
+  --border-width-none: 0;
+  --border-width-sm: 0.0625rem;
+
+  --radius-none: 0;
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-pill: 999rem;
+
+  /* ==========================================================================
+     Shadows
+     ========================================================================== */
+
+  --shadow-none: none;
+  --shadow-sm: 0 0.0625rem 0.125rem rgb(var(--color-shadow) / 0.06);
+  --shadow-md: 0 0.75rem 2rem rgb(var(--color-shadow) / 0.08);
+  --shadow-lg: 0 1.5rem 4rem rgb(var(--color-shadow) / 0.12);
+
+  /* ==========================================================================
+     Layout
+     ========================================================================== */
+
+  --layout-page-min: 20rem;
+  --layout-full: 100%;
+  --layout-content-max: 75rem;
+  --layout-content-narrow: 46rem;
+  --layout-gutter: clamp(var(--space-4), 4vw, var(--space-8));
+  --layout-section-gap: clamp(var(--space-16), 10vw, var(--space-24));
+  --layout-header-height: 4.5rem;
+  --layout-button-min-height: 2.75rem;
+
+  /* ==========================================================================
+     Motion
+     ========================================================================== */
+
+  --motion-duration-none: 0ms;
+  --motion-duration-fast: 150ms;
+  --motion-duration-base: 220ms;
+  --motion-duration-slow: 360ms;
+  --motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --motion-easing-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-scroll-behavior: smooth;
+  --motion-scroll-behavior-reduced: auto;
+
+  /* ==========================================================================
+     Z-index
+     ========================================================================== */
+
+  --z-index-base: 0;
+  --z-index-raised: 10;
+  --z-index-sticky: 100;
+  --z-index-overlay: 1000;
+  --z-index-modal: 1100;
+  --z-index-toast: 1200;
+
+  /* ==========================================================================
+     State
+     ========================================================================== */
+
+  --opacity-disabled: 0.56;
+}
