@@ -3,183 +3,197 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Luisa is a Product Designer focused on scalable digital products, design systems, UX strategy, accessibility, and technical collaboration.">
+  <meta name="description" content="Portfolio homepage for Luisa, Product Designer.">
   <title>Luisa | Product Designer</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- Site Header -->
   <header class="site-header">
     <nav class="site-nav container" aria-label="Primary navigation">
-      <a class="site-logo" href="index.html">Luisa</a>
-      <div class="site-nav__links">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#featured-work">Work</a></li>
-          <li><a href="#principles">Principles</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <a class="site-logo" href="index.html" aria-label="Luisa home">Luisa</a>
+
+      <ul class="site-nav__links">
+        <li><a href="#hero" aria-current="page">Home</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#work">Work</a></li>
+      </ul>
+
+      <a class="btn btn-secondary site-nav__action" href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
-    <section class="hero section" id="hero" aria-labelledby="hero-heading" aria-describedby="hero-description">
+    <section class="hero section" id="hero" aria-labelledby="hero-heading">
       <div class="hero__inner container">
         <div class="hero__content">
-          <p class="eyebrow">Product Designer</p>
-          <h1 id="hero-heading">I design digital products that people understand and teams can build.</h1>
-          <p id="hero-description">
-            I design scalable digital experiences by combining systems thinking, UX strategy,
-            accessibility and close collaboration with development teams.
+          <p class="eyebrow">PRODUCT DESIGNER</p>
+          <h1 id="hero-heading">Turning complex ideas into products people understand.</h1>
+          <p>
+            I design digital products from discovery to implementation, combining UX,
+            systems thinking and close collaboration with multidisciplinary teams.
           </p>
-          <div class="hero__actions" aria-label="Primary actions">
-            <a class="btn btn-primary" href="#featured-work">View my work</a>
-            <a class="btn btn-secondary" href="assets/documents/cv.pdf" download>Download Luisa&apos;s CV</a>
+          <div class="hero__actions" aria-label="Hero actions">
+            <a class="btn btn-primary" href="#work">View selected work</a>
+            <a class="btn btn-secondary" href="#contact">Let&apos;s connect</a>
           </div>
         </div>
+
         <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder">
-          <span>Portrait</span>
+          <span>Portrait placeholder</span>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="about" aria-labelledby="about-heading">
-      <div class="section__inner container">
+    <section class="section" id="approach" aria-labelledby="approach-heading">
+      <div class="container">
         <div class="section__header">
-          <p class="eyebrow">About</p>
-          <h2 id="about-heading">Designing with clarity, systems and collaboration.</h2>
+          <p class="eyebrow">My approach</p>
+          <h2 id="approach-heading">My approach</h2>
+          <p>
+            I believe great products emerge when curiosity, structured thinking and
+            collaboration come together.
+          </p>
         </div>
-        <div class="section__content text-flow">
-          <p>
-            Luisa is a Product Designer experienced in shaping complex digital platforms with
-            clear structure, accessible interactions, and practical product thinking.
-          </p>
-          <p>
-            Her work connects Design Systems, UX Writing, WordPress, Information Architecture,
-            and technical collaboration to help teams make digital experiences easier to use,
-            maintain, and evolve.
-          </p>
+
+        <div class="card-grid card-grid--three" aria-label="Design approach">
+          <article class="card" tabindex="0">
+            <h3>Systems Thinking</h3>
+            <p>I look beyond individual screens to understand how products, people and processes connect.</p>
+          </article>
+          <article class="card" tabindex="0">
+            <h3>Cross-functional Collaboration</h3>
+            <p>I adapt my language to work effectively with designers, developers, stakeholders and end users.</p>
+          </article>
+          <article class="card" tabindex="0">
+            <h3>Curiosity-driven Execution</h3>
+            <p>I enjoy exploring unfamiliar technologies and learning whatever is needed to move a project forward.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Core Strengths Section -->
-    <section class="section" id="strengths" aria-labelledby="strengths-heading">
+    <section class="section section--muted" id="expertise" aria-labelledby="expertise-heading">
       <div class="container">
         <div class="section__header">
           <p class="eyebrow">Core Expertise</p>
-          <h2 id="strengths-heading">Core strengths for complex product work.</h2>
-        </div>
-        <ul class="feature-grid" aria-label="Core expertise">
-          <li class="feature-item">
-            <h3>Systems Thinking</h3>
-            <p>Connecting user needs, product goals, and technical constraints into coherent experiences.</p>
-          </li>
-          <li class="feature-item">
-            <h3>Design Systems</h3>
-            <p>Creating reusable patterns that help products scale with consistency and clarity.</p>
-          </li>
-          <li class="feature-item">
-            <h3>Technical Collaboration</h3>
-            <p>Working closely with development teams to design solutions that can be built well.</p>
-          </li>
-          <li class="feature-item">
-            <h3>Information Architecture</h3>
-            <p>Organizing content and flows so people can find, understand, and complete what matters.</p>
-          </li>
-          <li class="feature-item">
-            <h3>UX Writing</h3>
-            <p>Using clear product language to guide users through complex decisions and tasks.</p>
-          </li>
-          <li class="feature-item">
-            <h3>Problem Solving</h3>
-            <p>Breaking down ambiguity into focused design decisions and practical next steps.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Featured Work Section -->
-    <section class="section" id="featured-work" aria-labelledby="featured-work-heading">
-      <div class="container">
-        <div class="section__header">
-          <p class="eyebrow">Featured Projects</p>
-          <h2 id="featured-work-heading">Selected work placeholders.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-card__image" role="img" aria-label="Design System project image placeholder"></div>
-            <div class="project-card__body">
-              <p class="project-card__category">Design System</p>
-              <h3>Design System</h3>
-              <p>Placeholder summary for a scalable design system project, including patterns, documentation, and product alignment.</p>
-              <a href="work.html">Read more about the Design System</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-card__image" role="img" aria-label="Digital Platform project image placeholder"></div>
-            <div class="project-card__body">
-              <p class="project-card__category">Digital Platform</p>
-              <h3>Digital Platform</h3>
-              <p>Placeholder summary for a complex digital platform project focused on structure, usability, and product workflows.</p>
-              <a href="work.html">Read more about the Digital Platform</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-card__image" role="img" aria-label="WordPress Experience project image placeholder"></div>
-            <div class="project-card__body">
-              <p class="project-card__category">WordPress</p>
-              <h3>WordPress Experience</h3>
-              <p>Placeholder summary for a WordPress experience involving content architecture, editorial needs, and maintainable design.</p>
-              <a href="work.html">Read more about the WordPress Experience</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Design Principles Section -->
-    <section class="section" id="principles" aria-labelledby="principles-heading">
-      <div class="container">
-        <div class="section__header">
-          <p class="eyebrow">Design Principles</p>
-          <h2 id="principles-heading">Principles that guide the work.</h2>
-        </div>
-        <ul class="principles-list">
-          <li>Every design decision should solve a problem.</li>
-          <li>Clarity is more valuable than decoration.</li>
-          <li>Design systems create consistency and scalability.</li>
-          <li>Documentation is part of the design process.</li>
-          <li>Accessibility should be considered from the beginning.</li>
-          <li>Good collaboration produces better products.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact CTA Section -->
-    <section class="section contact-cta" id="contact" aria-labelledby="contact-heading">
-      <div class="contact-cta__inner container">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-heading">Let&apos;s Work Together</h2>
+          <h2 id="expertise-heading">Core Expertise</h2>
           <p>
-            Have a project, collaboration, or opportunity in mind? Reach out to start a conversation.
+            A multidisciplinary skill set built across product strategy, UX, visual
+            design and implementation.
           </p>
         </div>
-        <a class="btn btn-primary" href="contact.html">Contact me</a>
+
+        <div class="card-grid card-grid--six" aria-label="Core expertise">
+          <article class="card expertise-card" tabindex="0">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>UX Research</h3>
+            <p>Understanding people, problems and opportunities before designing solutions.</p>
+          </article>
+          <article class="card expertise-card" tabindex="0">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Information Architecture</h3>
+            <p>Organizing complex information into clear and intuitive experiences.</p>
+          </article>
+          <article class="card expertise-card" tabindex="0">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Product Design</h3>
+            <p>Connecting business goals, user needs and technical constraints.</p>
+          </article>
+          <article class="card expertise-card" tabindex="0">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Design Systems</h3>
+            <p>Creating scalable interfaces and reusable design foundations.</p>
+          </article>
+          <article class="card expertise-card" tabindex="0">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Front-end Collaboration</h3>
+            <p>Designing with implementation in mind and working closely with developers.</p>
+          </article>
+          <article class="card expertise-card" tabindex="0">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Visual Design</h3>
+            <p>Building polished interfaces with strong hierarchy and attention to detail.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="work-heading">Placeholder section headline for selected work.</h2>
+          <p>
+            Placeholder paragraph introducing three reusable project cards.
+          </p>
+        </div>
+
+        <div class="project-grid" aria-label="Selected work">
+          <article class="project-card">
+            <div class="project-card__image" role="img" aria-label="Project image placeholder">
+              <span>Image placeholder</span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__category">Placeholder category</p>
+              <h3>Placeholder project title</h3>
+              <p>Placeholder description for a selected work card.</p>
+              <a class="project-card__link" href="work.html">Placeholder CTA</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image" role="img" aria-label="Project image placeholder">
+              <span>Image placeholder</span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__category">Placeholder category</p>
+              <h3>Placeholder project title</h3>
+              <p>Placeholder description for a selected work card.</p>
+              <a class="project-card__link" href="work.html">Placeholder CTA</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image" role="img" aria-label="Project image placeholder">
+              <span>Image placeholder</span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__category">Placeholder category</p>
+              <h3>Placeholder project title</h3>
+              <p>Placeholder description for a selected work card.</p>
+              <a class="project-card__link" href="work.html">Placeholder CTA</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-cta" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-cta__inner container">
+        <div class="contact-cta__content">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-heading">Placeholder call to action.</h2>
+          <p>
+            Placeholder paragraph for a short invitation to start a conversation.
+          </p>
+        </div>
+
+        <address class="contact-links" aria-label="Contact links">
+          <a href="mailto:email@example.com">email@example.com</a>
+          <a href="https://www.linkedin.com/" rel="noreferrer">LinkedIn placeholder</a>
+        </address>
       </div>
     </section>
   </main>
 
-  <!-- Site Footer -->
-  <footer>
-    <p>&copy; 2026 Luisa. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; 2026 Luisa. Placeholder footer text.</p>
+      <a href="#hero">Back to top</a>
+    </div>
   </footer>
 </body>
 </html>
