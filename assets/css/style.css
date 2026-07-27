@@ -465,35 +465,11 @@ main :where(li + li) {
   min-height: 0;
 }
 
-.tool-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
+.tool-list {
   margin-block: var(--space-0);
-  padding-inline-start: var(--space-0);
-  list-style: none;
-}
-
-.tool-tags li {
-  padding: var(--space-2) var(--space-4);
-  color: var(--color-accent-strong);
-  min-width: 5.5rem;
-  text-align: center;
-  flex: 0 0 auto;
-  background-color: var(--color-accent-soft);
-  border: var(--border-width-none);
-  border-radius: var(--radius-pill);
-  outline: var(--border-width-none);
-  box-shadow: var(--shadow-none);
+  color: var(--color-ink-muted);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-snug);
-}
-
-.tool-tags li:focus,
-.tool-tags li:focus-visible {
-  outline: var(--border-width-none);
-  box-shadow: var(--shadow-none);
+  line-height: var(--line-height-base);
 }
 
 .expertise-card {
