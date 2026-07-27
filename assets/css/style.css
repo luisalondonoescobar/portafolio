@@ -596,7 +596,7 @@ main :where(li + li) {
 }
 
 .project-card__image {
-  min-height: 14rem;
+  min-height: clamp(10rem, 45vw, 14rem);
   aspect-ratio: 16 / 10;
   overflow: hidden;
   border: var(--border-width-none);
