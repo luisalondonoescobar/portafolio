@@ -1,4 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Mobile Navigation Toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.getElementById('site-nav-links');
+
+  if (navToggle && navLinks) {
+    const closeNav = () => {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navLinks.classList.remove('is-open');
+    };
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', closeNav);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeNav();
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) closeNav();
+    });
+  }
+
   // Fullscreen Lightbox Image Viewer
   const dialog = document.getElementById('lightbox-dialog');
   const lightboxImg = document.getElementById('lightbox-img');

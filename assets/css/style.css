@@ -200,11 +200,56 @@ main a:active {
 }
 
 .site-nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
   min-height: var(--layout-header-height);
+}
+
+.site-nav__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.nav-toggle {
+  display: inline-flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: var(--space-0);
+  background-color: transparent;
+  border: var(--border-width-sm) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.nav-toggle__bar {
+  display: block;
+  width: 1.125rem;
+  height: 2px;
+  background-color: var(--color-ink-strong);
+  border-radius: var(--radius-pill);
+  transition: transform var(--motion-duration-fast) var(--motion-easing-standard),
+              opacity var(--motion-duration-fast) var(--motion-easing-standard);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .site-logo {
@@ -227,6 +272,28 @@ main a:active {
   padding: var(--space-0);
   list-style: none;
   overflow-x: auto;
+}
+
+@media (max-width: 47.99em) {
+  .site-nav__links.is-open {
+    display: flex;
+    position: absolute;
+    inset-inline: var(--space-0);
+    inset-block-start: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-1);
+    padding: var(--space-4);
+    background-color: var(--color-surface-raised);
+    border-block-end: var(--border-width-sm) solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    overflow: visible;
+  }
+
+  .site-nav__links.is-open a {
+    width: var(--layout-full);
+    padding-inline: var(--space-2);
+  }
 }
 
 .site-nav ul {
@@ -881,7 +948,7 @@ main :where(li + li) {
 .media-placeholder div,
 .process-diagram div {
   display: grid;
-  min-height: 18rem;
+  min-height: clamp(12rem, 45vw, 18rem);
   place-items: center;
   overflow: hidden;
   color: var(--color-ink-soft);
@@ -957,7 +1024,7 @@ main :where(li + li) {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10;
-  min-height: 18rem;
+  min-height: clamp(12rem, 45vw, 18rem);
   display: grid;
   place-items: center;
   color: var(--color-ink-soft);
@@ -1644,6 +1711,10 @@ main :where(li + li) {
    ========================================================================== */
 
 @media (min-width: 48em) {
+  .nav-toggle {
+    display: none;
+  }
+
   .site-nav__links {
     display: flex;
   }
