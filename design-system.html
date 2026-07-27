@@ -19,6 +19,7 @@
         <li><a href="#role">My Role</a></li>
         <li><a href="#overview">Overview</a></li>
         <li><a href="#pipeline">Pipeline</a></li>
+        <li><a href="#tokens">Tokens</a></li>
         <li><a href="#outcome">Outcome</a></li>
       </ul>
 
@@ -166,6 +167,58 @@
               becomes the path of least resistance instead of an extra step someone has to
               remember.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section section--muted" id="tokens" aria-labelledby="tokens-heading">
+        <div class="container">
+          <header class="section__header">
+            <p class="eyebrow">Design Tokens</p>
+            <h2 id="tokens-heading">The tokens behind one button.</h2>
+            <p>
+              Every value on the Button component traces back to a named design token,
+              extracted directly from Figma during the AI-assisted documentation pass. A
+              few examples:
+            </p>
+          </header>
+
+          <div class="metric-grid" aria-label="Sample design tokens for the Button component">
+            <article class="card metric-card token-card">
+              <span class="token-card__swatch" style="background-color: #1D4ED8;" aria-hidden="true"></span>
+              <h3><code class="token-card__name">button.primary.background</code></h3>
+              <p>Primary button background.</p>
+            </article>
+
+            <article class="card metric-card token-card">
+              <span class="token-card__swatch" style="background-color: #F4F4F5;" aria-hidden="true"></span>
+              <h3><code class="token-card__name">button.secondary.background</code></h3>
+              <p>Secondary button background.</p>
+            </article>
+
+            <article class="card metric-card token-card">
+              <p class="metric-card__value">16px</p>
+              <h3><code class="token-card__name">button.padding.x</code></h3>
+              <p>Horizontal padding, default size.</p>
+            </article>
+
+            <article class="card metric-card token-card">
+              <p class="metric-card__value">8px</p>
+              <h3><code class="token-card__name">button.gap</code></h3>
+              <p>Space between icon and label.</p>
+            </article>
+
+            <article class="card metric-card token-card">
+              <p class="metric-card__value">12px</p>
+              <h3><code class="token-card__name">button.border.radius</code></h3>
+              <p>Default border radius (md / lg).</p>
+            </article>
+
+            <article class="card metric-card token-card">
+              <p class="metric-card__value">3px</p>
+              <h3><code class="token-card__name">button.focus.ring.width</code></h3>
+              <p>Focus ring thickness.</p>
+            </article>
           </div>
         </div>
       </section>
