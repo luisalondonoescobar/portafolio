@@ -1150,6 +1150,7 @@ main :where(li + li) {
 /* Process Diagram Flow Component */
 .process-diagram-flow {
   display: grid;
+  align-items: stretch;
   gap: var(--space-6);
   margin-block-start: var(--space-8);
 }
@@ -1157,7 +1158,9 @@ main :where(li + li) {
 .process-step-card {
   position: relative;
   display: grid;
+  align-content: start;
   gap: var(--space-4);
+  height: 100%;
   padding: var(--space-6);
   background-color: var(--color-surface-raised);
   border: var(--border-width-sm) solid var(--color-border);
