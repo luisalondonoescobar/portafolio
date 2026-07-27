@@ -1242,6 +1242,23 @@ main :where(li + li) {
   margin-block-start: var(--space-10);
 }
 
+.before-after-stack {
+  display: grid;
+  gap: var(--space-12);
+  margin-block-start: var(--space-10);
+}
+
+.before-after-pair__title {
+  margin-block-end: var(--space-0);
+  color: var(--color-ink-strong);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.before-after-pair .comparison-grid {
+  margin-block-start: var(--space-4);
+}
+
 .comparison-grid .media-placeholder,
 .decision-block .media-placeholder {
   margin-block-end: var(--space-0);
