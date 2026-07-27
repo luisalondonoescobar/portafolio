@@ -1628,6 +1628,10 @@ main :where(li + li) {
     grid-template-columns: repeat(3, minmax(var(--space-0), 1fr));
   }
 
+  .comparison-grid--gallery {
+    grid-template-columns: repeat(3, minmax(var(--space-0), 1fr));
+  }
+
   #approach .card-grid,
   #expertise .card-grid {
     gap: var(--space-8);
