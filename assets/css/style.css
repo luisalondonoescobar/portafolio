@@ -392,6 +392,16 @@ main :where(li + li) {
   background-color: var(--color-accent-soft);
   border: var(--border-width-sm) solid var(--color-border-strong);
   border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-placeholder svg {
+  width: 55%;
+  height: 55%;
+  fill: var(--color-accent-strong);
+  stroke: var(--color-accent-strong);
 }
 
 #approach .card-grid,
