@@ -1367,13 +1367,15 @@ main :where(li + li) {
 
 .contact-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: var(--space-3);
   font-style: normal;
 }
 
 .contact-links a {
   overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
