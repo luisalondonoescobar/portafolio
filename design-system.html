@@ -115,8 +115,9 @@
                 <span class="process-step-card__step">1</span>
                 <h3 class="process-step-card__title">Curated in Figma</h3>
               </div>
-              <div class="process-step-card__diagram lightbox-trigger">
-                <img src="assets/images/primeone-figma-kit.png" alt="PrimeOne 4 Figma UI Kit for Prime, showing buttons, forms, calendars and other components in the purchased library">
+              <div class="process-step-card__diagram figma-mock" role="img" aria-label="A single Button component selected on a Figma canvas">
+                <span class="figma-mock__label">Button / Filled</span>
+                <button type="button" class="figma-mock__button" tabindex="-1">Guardar</button>
               </div>
               <p class="process-step-card__explanation">
                 The components themselves came from PrimeNG's purchased Figma library —
@@ -131,8 +132,13 @@
                 <span class="process-step-card__step">2</span>
                 <h3 class="process-step-card__title">Documented in Docusaurus, with AI</h3>
               </div>
-              <div class="process-step-card__diagram lightbox-trigger">
-                <img src="assets/images/docusaurus-anatomy.png" alt="Docusaurus documentation page for a Button component, showing usage guidelines and an anatomy table">
+              <div class="process-step-card__diagram docs-mock" lang="es">
+                <h4 class="docs-mock__title">Contenido y voz</h4>
+                <ul class="docs-mock__list">
+                  <li><strong>Longitud máxima:</strong> 3 palabras.</li>
+                  <li><strong>Tono:</strong> imperativo, verbo en infinitivo.</li>
+                  <li><strong>Verbos preferidos:</strong> Guardar, Confirmar, Continuar.</li>
+                </ul>
               </div>
               <p class="process-step-card__explanation">
                 An AI workflow read the Figma file directly, extracting the real design
@@ -147,8 +153,13 @@
                 <span class="process-step-card__step">3</span>
                 <h3 class="process-step-card__title">Built in Storybook</h3>
               </div>
-              <div class="process-step-card__diagram lightbox-trigger">
-                <img src="assets/images/storybook-button.png" alt="Storybook story for the Button component, showing a live preview, HTML output and a props control table">
+              <div class="process-step-card__diagram storybook-mock" role="img" aria-label="Live button variants rendered from the Button component's severity tokens">
+                <button type="button" class="storybook-mock__btn" style="background-color: #1D4ED8; color: #FFFFFF;" tabindex="-1">Primario</button>
+                <button type="button" class="storybook-mock__btn" style="background-color: #F4F4F5; color: #52525B;" tabindex="-1">Secundario</button>
+                <button type="button" class="storybook-mock__btn" style="background-color: #22C55E; color: #FFFFFF;" tabindex="-1">Éxito</button>
+                <button type="button" class="storybook-mock__btn" style="background-color: #0EA5E9; color: #FFFFFF;" tabindex="-1">Info</button>
+                <button type="button" class="storybook-mock__btn" style="background-color: #F97316; color: #FFFFFF;" tabindex="-1">Advertencia</button>
+                <button type="button" class="storybook-mock__btn" style="background-color: #EF4444; color: #FFFFFF;" tabindex="-1">Peligro</button>
               </div>
               <p class="process-step-card__explanation">
                 The documented component became a live, interactive story engineering

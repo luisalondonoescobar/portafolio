@@ -1242,6 +1242,87 @@ main :where(li + li) {
   display: block;
 }
 
+/* Pipeline step diagrams — live mockups instead of screenshots */
+.figma-mock {
+  position: relative;
+  background-image: radial-gradient(var(--color-border) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+.figma-mock__label {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  color: var(--color-accent);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.figma-mock__button {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  color: var(--color-white);
+  background-color: #1d4ed8;
+  border: var(--border-width-none);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: default;
+}
+
+.docs-mock {
+  place-items: start;
+  padding: var(--space-6);
+  color: var(--color-white);
+  background-color: var(--color-ink-strong);
+  text-align: left;
+}
+
+.docs-mock__title {
+  margin-block-end: var(--space-3);
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.docs-mock__list {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-0);
+  padding-inline-start: var(--space-5);
+  color: var(--color-border-strong);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-snug);
+}
+
+.docs-mock__list strong {
+  color: var(--color-white);
+}
+
+.storybook-mock {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-6);
+}
+
+.storybook-mock__btn {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: var(--border-width-none);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: default;
+}
+
 .process-step-card__explanation {
   color: var(--color-ink-muted);
   font-size: var(--font-size-sm);
