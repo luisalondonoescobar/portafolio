@@ -91,83 +91,6 @@
         </div>
       </section>
 
-      <section class="case-section section" id="design-decisions" aria-labelledby="design-decisions-heading">
-        <div class="container">
-          <header class="section__header">
-            <p class="eyebrow">Process &amp; Design System</p>
-            <h2 id="design-decisions-heading">Three decisions shaped how the system scaled.</h2>
-            <p>
-              The system had to work for many teams at once, so it needed to be adopted by
-              choice, not enforced by mandate.
-            </p>
-          </header>
-
-          <div class="decision-stack">
-            <article class="decision-block">
-              <div class="decision-block__content">
-                <h3>Components before pixels</h3>
-                <p>
-                  Instead of designing individual screens, the team built reusable, documented
-                  components first. Every new feature could start from the same primitives
-                  instead of being drawn from a blank canvas.
-                </p>
-              </div>
-              <figure class="media-placeholder screenshot-frame">
-                <div role="img" aria-label="Component library screenshot placeholder">
-                  <span>Supporting screenshot placeholder</span>
-                </div>
-                <figcaption>Placeholder for the reusable component library.</figcaption>
-              </figure>
-            </article>
-
-            <article class="decision-block">
-              <div class="decision-block__content">
-                <h3>Tokens as the source of truth</h3>
-                <p>
-                  Color, spacing and typography were defined once as design tokens, shared
-                  between design and code. Visual consistency no longer depended on someone
-                  remembering the right hex code.
-                </p>
-              </div>
-              <figure class="media-placeholder screenshot-frame">
-                <div role="img" aria-label="Design tokens screenshot placeholder">
-                  <span>Supporting screenshot placeholder</span>
-                </div>
-                <figcaption>Placeholder for the token and foundations documentation.</figcaption>
-              </figure>
-            </article>
-
-            <article class="decision-block">
-              <div class="decision-block__content">
-                <h3>Documentation as a product</h3>
-                <p>
-                  The documentation site was treated as a product in its own right, with
-                  onboarding, usage examples and content guidelines, not an afterthought
-                  bolted on once the components were done.
-                </p>
-              </div>
-              <figure class="media-placeholder screenshot-frame">
-                <div role="img" aria-label="Documentation site screenshot placeholder">
-                  <span>Supporting screenshot placeholder</span>
-                </div>
-                <figcaption>Placeholder for the component documentation site.</figcaption>
-              </figure>
-            </article>
-          </div>
-
-          <div class="section-insight" id="problem" aria-labelledby="problem-heading">
-            <p class="section-insight__label">A conclusion along the way</p>
-            <p class="section-insight__quote" id="problem-heading">Consistency doesn't come from asking teams to be more careful.</p>
-            <p class="section-insight__body">
-              Rules alone don't scale across dozens of teams shipping in parallel. What
-              scales is making the reusable option the easiest one — a documented component
-              is faster to use than a custom one, so consistency becomes the path of least
-              resistance instead of an extra step someone has to remember.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section class="case-section section" id="pipeline" aria-labelledby="pipeline-heading">
         <div class="container">
           <header class="section__header">
@@ -192,7 +115,9 @@
               </div>
               <p class="process-step-card__explanation">
                 Components were built as the single source of truth for variants, states
-                and spacing, ready for other teams to reuse.
+                and spacing — with color, spacing and typography defined once as design
+                tokens, so visual consistency no longer depended on someone remembering
+                the right hex code.
               </p>
             </article>
 
@@ -205,8 +130,9 @@
                 <span>Supporting screenshot placeholder</span>
               </div>
               <p class="process-step-card__explanation">
-                Usage guidelines, do's and don'ts and content rules were written down, so
-                any team could self-serve without asking design directly.
+                The site was treated as a product in its own right — usage guidelines,
+                do's and don'ts and content rules, not an afterthought bolted on once
+                components were done — so any team could self-serve.
               </p>
             </article>
 
@@ -223,6 +149,18 @@
                 could inspect, test and import directly into product code.
               </p>
             </article>
+          </div>
+
+          <div class="section-insight" id="problem" aria-labelledby="problem-heading">
+            <p class="section-insight__label">A conclusion along the way</p>
+            <p class="section-insight__quote" id="problem-heading">Consistency doesn't come from asking teams to be more careful.</p>
+            <p class="section-insight__body">
+              Rules alone don't scale across dozens of teams shipping in parallel. What
+              scales is making the reusable option the easiest one — a documented,
+              Storybook-ready component is faster to use than a custom one, so consistency
+              becomes the path of least resistance instead of an extra step someone has to
+              remember.
+            </p>
           </div>
         </div>
       </section>
