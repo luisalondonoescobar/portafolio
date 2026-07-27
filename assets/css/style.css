@@ -178,10 +178,6 @@ main a:active {
   max-width: var(--layout-content-narrow);
 }
 
-.section__header--wide {
-  max-width: none;
-}
-
 .section__content {
   max-width: var(--layout-content-narrow);
 }
