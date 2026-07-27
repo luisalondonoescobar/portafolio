@@ -1610,6 +1610,23 @@ main :where(li + li) {
     max-width: var(--layout-content-narrow);
   }
 
+  .decision-stack--columns {
+    grid-template-columns: repeat(3, minmax(var(--space-0), 1fr));
+    gap: var(--space-8);
+  }
+
+  .decision-stack--columns .decision-block--text-only {
+    padding-block: var(--space-0);
+    border-block-start: var(--border-width-none);
+    border-inline-start: var(--border-width-sm) solid var(--color-border);
+    padding-inline-start: var(--space-6);
+  }
+
+  .decision-stack--columns .decision-block--text-only:first-child {
+    border-inline-start: var(--border-width-none);
+    padding-inline-start: var(--space-0);
+  }
+
   .journey-list {
     grid-template-columns: repeat(3, minmax(var(--space-0), 1fr));
   }
