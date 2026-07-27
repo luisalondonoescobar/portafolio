@@ -1195,6 +1195,7 @@ main :where(li + li) {
 }
 
 .process-step-card__diagram {
+  aspect-ratio: 16 / 10;
   min-height: 10rem;
   display: grid;
   place-items: center;
