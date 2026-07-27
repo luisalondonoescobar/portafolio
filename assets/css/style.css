@@ -1585,6 +1585,14 @@ main :where(li + li) {
     padding-block: var(--space-12);
   }
 
+  .decision-block--text-only {
+    grid-template-columns: minmax(var(--space-0), 1fr);
+  }
+
+  .decision-block--text-only .decision-block__content {
+    max-width: var(--layout-content-narrow);
+  }
+
   .journey-list {
     grid-template-columns: repeat(3, minmax(var(--space-0), 1fr));
   }
