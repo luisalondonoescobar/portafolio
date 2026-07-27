@@ -389,6 +389,25 @@ main :where(li + li) {
   margin-block-end: var(--space-0);
 }
 
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block: var(--space-0);
+  padding-inline-start: var(--space-0);
+  list-style: none;
+}
+
+.tool-tags li {
+  padding: var(--space-2) var(--space-3);
+  color: var(--color-accent-strong);
+  background-color: var(--color-accent-soft);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-snug);
+}
+
 .expertise-card {
   display: flex;
   flex-direction: column;
