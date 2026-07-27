@@ -389,11 +389,16 @@ main :where(li + li) {
   margin-block-end: var(--space-0);
 }
 
+.tool-groups {
+  align-items: start;
+}
+
 .tool-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--space-4);
+  min-height: 0;
 }
 
 .tool-tags {
