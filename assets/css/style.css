@@ -2007,6 +2007,7 @@ main :where(li + li) {
   position: relative;
   aspect-ratio: 16 / 10;
   overflow: hidden;
+  padding: var(--space-4);
   background-color: var(--color-surface-muted);
   border: var(--border-width-sm) solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -2015,11 +2016,12 @@ main :where(li + li) {
 
 .flow-demo__image {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  inset: var(--space-4);
+  width: calc(100% - (var(--space-4) * 2));
+  height: calc(100% - (var(--space-4) * 2));
   object-fit: contain;
   object-position: center;
+  border-radius: var(--radius-md);
   display: block;
   opacity: 0;
   animation: flow-demo-fade-in var(--motion-duration-base) var(--motion-easing-standard) forwards;
