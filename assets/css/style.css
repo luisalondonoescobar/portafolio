@@ -575,6 +575,8 @@ main :where(li + li) {
   min-height: clamp(10rem, 45vw, 14rem);
   aspect-ratio: 16 / 10;
   overflow: hidden;
+  padding: var(--space-4);
+  background-color: var(--color-surface-muted);
   border: var(--border-width-none);
   border-block-end: var(--border-width-sm) solid var(--color-border);
   border-radius: var(--radius-none);
@@ -586,6 +588,7 @@ main :where(li + li) {
   height: 100%;
   object-fit: cover;
   object-position: top center;
+  border-radius: var(--radius-md);
 }
 
 .project-card__image--gradient-a {
